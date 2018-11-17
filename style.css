@@ -1,0 +1,121 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+
+/* ベース */
+html {
+    font-size: 62.5%;
+}
+
+body {
+  color: #4c4c4c;
+  font-size: 1.4rem;
+  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.1em;}
+
+a {
+  color: #4c4c4c;
+  text-decoration: none; }
+  a:visited {
+    color: #4c4c4c ; }
+  a:hover {
+    color: blue; }
+  a:active {
+    color: #16d6e0; }
+
+.text-center {
+    text-align: center;
+}    
+    
+/* メイン */
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #ffebcd;
+  height: 50px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+#worlds {
+  margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+/* メイン画像 */
+#main-img-box {
+    background-image:url(http://www.chikyudori.com/wp-content/uploads/2018/08/D853441x3.jpg);
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: center center;
+    margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.box {
+  background-color:#ffebcd;
+  width: 33%;
+  margin: 10px;
+  flex: 1;
+}
+
+.box-inbox{
+  margin: 5px;
+}
+
+/* メディアクエリ */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .box {
+    width: auto;
+  }
+  #main-img-box {
+    height: 250px;
+  }
+}
+
+/* 検索  */
+#find {
+  margin-bottom: 50px;
+}
+
+/* 検索ボタン */
+#next-button {
+    display: block;
+    background-color:#87ceeb;
+    width: 200px;
+    padding: 10px 0;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+/* フッター */
+footer {
+    background-color: #ffebcd;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* フッターフォント */
+.abel {
+  font-family: 'Abel', sans-serif; 
+}
+
